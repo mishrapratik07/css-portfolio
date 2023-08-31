@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+
+
+        }
+
+        :root {
+
+            --theme: coral;
+
+
+        }
+
+        .hero {
+            background-image: url(images/bg.svg);
+            background-position: bottom left;
+            background-size: cover;
+            height: calc(100vh - 75px);
+
+
+
+        }
+
+        .hero-img {
+            position: absolute;
+            top: 0;
+            right: 0;
+
+            height: calc(100vh - 75px);
+
+        }
+
+        .hero-content {
+            position: absolute;
+            top: 15%;
+            left: 10%;
+            color: white;
+
+        }
+
+        h1 {}
+
+        p {
+
+            width: 50%;
+            line-height: 1.7rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .hero a {
+
+
+            color: var(--theme);
+            text-decoration: none;
+            border: 2px solid var(--theme);
+            padding: 0.5rem 1.5rem;
+
+
+
+        }
+
+        .navbar {
+            background-color: var(--theme);
+            height: 75px;
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+        }
+
+        .navbar a {
+            color: blue;
+            /* text-decoration: none;  for remove underline */
+            text-decoration: none;
+
+        }
+
+        .skills {
+            /* 
+            height: 200px;
+            margin-top: 2rem; */
+            /* background-color: var(--theme); */
+            margin: 2rem auto 0px;
+            width: 80%;
+            display: flex;
+
+            gap: 2rem;
+
+
+        }
+
+        .progress {
+            background-color: gray;
+            height: 2rem;
+            margin: 2rem 0;
+        }
+
+        .progress-bar {
+            background-color: var(--theme);
+            height: 2rem;
+            /* width: 75%; */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .frontend {
+            width: 50%;
+        }
+
+        .backend {
+            width: 50%;
+        }
+
+        .html {
+            width: 80%;
+        }
+
+        .css {
+            width: 60%;
+        }
+
+        .card {
+            width: 25%;
+            border: 2px solid var(--theme);
+
+        }
+
+        .card img {
+            max-width: 100%;
+            padding: 2rem;
+        }
+
+        .card-body {
+
+            padding: 2rem;
+        }
+
+        .projects {
+
+            width: 80%;
+            margin: 2rem auto;
+            display: flex;
+            gap: 2rem;
+        }
+    </style>
+
+
+
+</head>
+
+<body>
+
+    <div class="hero">
+        <div class="hero-content ">
+            <h1>hey my self pratik</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus soluta similique ab quos, alias
+                numquam?</p>
+            <a href="">hire me</a>
+        </div>
+        <img class="hero-img" src="images/bg-dots.svg" alt="">
+        <img class="hero-img" src="images/user.png"">
+    </div>
+    <div class=" navbar">
+        <a href="">home</a>
+        <a href="">education</a>
+        <a href="">projects</a>
+        <a href="">experiance</a>
+        <a href="">contact</a>
+
+
+    </div>
+    <div class="skills">
+        <div class="frontend">
+
+            <div class="progress">
+                <div class="progress-bar html">HTML</div>
+            </div>
+            <div class="progress">
+                <div class="progress-bar css">CSS</div>
+            </div>
+        </div>
+        <div class="backend">
+
+            <div class="progress">
+                <div class="progress-bar html">React</div>
+            </div>
+            <div class="progress">
+                <div class="progress-bar css">Python</div>
+            </div>
+        </div>
+
+
+    </div>
+    <div class="projects">
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1496181133206-80ce9b88a853?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1471&q=80"
+                alt="">
+            <div class="card-body">
+                <h1>Todo</h1>
+                <p>Lorem.</p>
+                <a href="">visit</a>
+            </div>
+        </div>
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1472&q=80"
+                alt="">
+            <div class="card-body">
+                <h1>Game</h1>
+                <p>Lorem.</p>
+                <a href="">visit</a>
+            </div>
+        </div>
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1602080858428-57174f9431cf?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1551&q=80"
+                alt="">
+            <div class="card-body">
+                <h1>Class</h1>
+                <p>Lorem.</p>
+                <a href="">visit</a>
+            </div>
+        </div>
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1559163499-413811fb2344?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80"
+                alt="">
+            <div class="card-body">
+                <h1>Laptop</h1>
+                <p>Lorem.</p>
+                <a href="">visit</a>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
